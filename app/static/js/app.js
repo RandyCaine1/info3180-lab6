@@ -14,7 +14,7 @@ Vue.component('app-header', {
                     <router-link to="/" class="nav-link">Home</router-link>
                   </li>
                   <li class="nav-item active">
-                        <router-link to="/news" class="nav-link">News</router-link>
+                  <router-link to="/news" class="nav-link">News</router-link>
                  </li> 
                 </ul>
               </div>
@@ -99,12 +99,12 @@ const Home = Vue.component('home', {
         <div class="home">
         <img src="/static/images/logo.png" alt="VueJS Logo">
         <h1>{{ welcome }}</h1>
-        </div>
-        `,
+        </div>`,
         data: function() {
-            return 
-            welcome: 'Hello World! Welcome to VueJS'
+            return {
+            welcome: 'Welcome to VueJS News'
             
+        }
         }
     
 });
